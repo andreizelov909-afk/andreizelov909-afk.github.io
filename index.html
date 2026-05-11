@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Clarity Test Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "wf8gx9qoil");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="brand">Clarity Test Site</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Clarity Test Site</h1>
+        <p>
+          A small static site used to generate session data for the
+          Microsoft Clarity Data Export API. Scroll, click, and navigate
+          between pages to populate the Traffic, Scroll Depth, Engagement
+          Time, and Popular Pages metric blocks.
+        </p>
+        <a class="cta" href="pricing.html">See pricing</a>
+      </section>
+
+      <section>
+        <h2>What this page does</h2>
+        <p>
+          Each page on this site loads the Clarity tracking tag and offers
+          enough scrollable content for Clarity to record non-trivial
+          scroll-depth and engagement-time metrics. The nav above links to
+          three sub-pages so the Popular Pages block has more than one URL
+          and referrer to report.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why a test site</h2>
+        <p>
+          Clarity has no ingestion API. Data is only collected through the
+          in-page JavaScript tag, so a real (or simulated) browser session
+          is required before the export API returns anything useful.
+        </p>
+      </section>
+
+      <section>
+        <h2>Filler content</h2>
+        <p>
+          The following paragraphs exist purely to give the page a real
+          scrollable height so that scroll-depth percentages are not
+          trivially 100% on every visit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque
+          ipsa quae ab illo inventore veritatis et quasi architecto beatae
+          vitae dicta sunt explicabo.
+        </p>
+        <p>
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+          odit aut fugit, sed quia consequuntur magni dolores eos qui
+          ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos
+          dolores et quas molestias excepturi sint occaecati cupiditate
+          non provident.
+        </p>
+      </section>
+
+      <section class="deep">
+        <h2>Reached the bottom</h2>
+        <p>
+          If a visitor sees this section, Clarity records a high
+          scroll-depth percentage. Click the button below to also register
+          an engagement event.
+        </p>
+        <button type="button" id="engage">I'm engaged</button>
+        <p id="engage-feedback" hidden>Thanks for the click!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Clarity Test Site</p>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

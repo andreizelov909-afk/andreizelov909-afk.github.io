@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Clarity Test Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "wf8gx9qoil");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="brand">Clarity Test Site</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>About</h1>
+        <p>
+          This site is part of a Windsor.ai connector test harness for
+          the Microsoft Clarity Data Export API.
+        </p>
+      </section>
+
+      <section>
+        <h2>How the data is generated</h2>
+        <p>
+          Visitors land on a page, the Clarity tag fires, and Clarity
+          records the session in its dashboard. After Clarity's daily
+          rollup, the
+          <code>/export-data/api/v1/project-live-insights</code> endpoint
+          surfaces aggregates broken down by Browser, Device, OS,
+          Country/Region, Source, Medium, Campaign, Channel, and URL.
+        </p>
+      </section>
+
+      <section>
+        <h2>Things to try</h2>
+        <ul>
+          <li>Visit each page from a different browser.</li>
+          <li>Open the site on a phone and a desktop.</li>
+          <li>
+            Append <code>?utm_source=test&amp;utm_medium=manual</code> to
+            populate the Source / Medium dimensions.
+          </li>
+          <li>Scroll to the bottom and click around.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Filler content</h2>
+        <p>
+          Cras venenatis euismod malesuada. Vestibulum ante ipsum primis
+          in faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
+        <p>
+          Phasellus dictum, justo at viverra pharetra, lectus nibh
+          fringilla nibh, sit amet imperdiet justo lectus nec arcu.
+        </p>
+        <p>
+          Integer non magna nec velit imperdiet maximus. Nullam vehicula,
+          eros vel pulvinar sollicitudin, tortor velit congue lectus, et
+          rhoncus nibh felis ut elit.
+        </p>
+        <p>
+          Donec a tortor sit amet sapien aliquet euismod. Vivamus eget
+          rhoncus sapien. Sed ut nisl ut nibh ullamcorper varius.
+        </p>
+        <p>
+          Curabitur nec urna nec ipsum laoreet ultricies. Praesent vitae
+          arcu non lacus malesuada gravida.
+        </p>
+      </section>
+
+      <section class="deep">
+        <h2>About wrap-up</h2>
+        <p>
+          Use the nav above to keep generating session activity across
+          multiple pages.
+        </p>
+        <a class="cta" href="pricing.html">Next: pricing</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Clarity Test Site</p>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>
